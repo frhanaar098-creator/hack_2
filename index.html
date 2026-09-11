@@ -1,1 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pointless Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo" onclick="showPage('home')">
+        🧪 POINTLESS HUB
+    </div>
+
+    <div class="nav-links">
+        <button onclick="showPage('home')">HOME</button>
+        <button onclick="showPage('challenges')">CHALLENGES</button>
+        <button onclick="showPage('results')">RESULTS</button>
+    </div>
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <div class="badge">
+            100% FRONTEND • 0% USEFULNESS
+        </div>
+
+        <h1>
+            THE<br>
+            <span>POINTLESS</span><br>
+            HUB
+        </h1>
+
+        <p class="tagline">
+            We solve problems nobody asked us to solve.
+        </p>
+
+        <p class="description">
+            Welcome to the world's most unnecessarily
+            sophisticated collection of useless challenges.
+        </p>
+
+        <button class="main-btn" onclick="showPage('challenges')">
+            ENTER THE LAB →
+        </button>
+
+        <div class="home-stats">
+
+            <div>
+                <strong>07</strong>
+                <span>Challenges</span>
+            </div>
+
+            <div>
+                <strong>00%</strong>
+                <span>Productivity</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>Time Wasted</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CHALLENGES ================= -->
+
+<section id="challenges" class="page">
+
+    <div class="page-title">
+
+        <div class="badge">THE HUB</div>
+
+        <h2>
+            Choose Your <span>Pointless</span> Challenge
+        </h2>
+
+        <p>
+            Seven challenges. Zero usefulness.
+        </p>
+
+    </div>
+
+
+    <div class="challenge-grid">
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🎯</div>
+
+            <small>IMPOSSIBLE</small>
+
+            <h3>Find the Exact Middle</h3>
+
+            <p>
+                Find the exact center of the screen.
+                The center has other plans.
+            </p>
+
+            <button onclick="openChallenge('center')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🖱️</div>
+
+            <small>ANNOYING</small>
+
+            <h3>Catch the Button</h3>
+
+            <p>
+                Catch the button before it escapes.
+            </p>
+
+            <button onclick="openChallenge('button')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🔢</div>
+
+            <small>POINTLESS</small>
+
+            <h3>Random Number</h3>
+
+            <p>
+                Guess a number that doesn't want to be guessed.
+            </p>
+
+            <button onclick="openChallenge('number')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🎨</div>
+
+            <small>CONFUSING</small>
+
+            <h3>Different Color</h3>
+
+            <p>
+                Find the different circle.
+                Or don't. It doesn't matter.
+            </p>
+
+            <button onclick="openChallenge('color')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">⏳</div>
+
+            <small>99%</small>
+
+            <h3>Infinite Loading</h3>
+
+            <p>
+                Wait patiently for something that won't happen.
+            </p>
+
+            <button onclick="openChallenge('loading')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🧠</div>
+
+            <small>GENIUS</small>
+
+            <h3>Nonsense IQ</h3>
+
+            <p>
+                Test your intelligence with questions
+                that make no sense.
+            </p>
+
+            <button onclick="openChallenge('iq')">
+                PLAY →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-card">
+
+            <div class="card-icon">🤖</div>
+
+            <small>AI™</small>
+
+            <h3>UselessBot</h3>
+
+            <p>
+                Ask our extremely intelligent useless AI.
+            </p>
+
+            <button onclick="openChallenge('bot')">
+                PLAY →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CHALLENGE SCREEN ================= -->
+
+<section id="game" class="page">
+
+    <div class="game-header">
+
+        <button class="back-btn" onclick="showPage('challenges')">
+            ← BACK
+        </button>
+
+        <div>
+            <span id="challengeNumber">Challenge</span>
+            <h2 id="gameTitle"></h2>
+        </div>
+
+        <div class="game-stats">
+            Attempts: <span id="gameAttempts">0</span>
+        </div>
+
+    </div>
+
+
+    <div id="gameArea" class="game-area"></div>
+
+
+    <div class="game-navigation">
+
+        <button onclick="previousChallenge()">
+            ← PREVIOUS
+        </button>
+
+        <button onclick="showPage('challenges')">
+            ALL CHALLENGES
+        </button>
+
+        <button onclick="nextChallenge()">
+            NEXT →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESULTS ================= -->
+
+<section id="results" class="page">
+
+    <div class="page-title">
+
+        <div class="badge">FINAL ANALYSIS</div>
+
+        <h2>
+            YOUR <span>RESULTS</span>
+        </h2>
+
+        <p>
+            Congratulations. You accomplished absolutely nothing.
+        </p>
+
+    </div>
+
+
+    <div class="results-card">
+
+        <div class="result">
+            <span>🧠 Intelligence</span>
+            <strong>0%</strong>
+        </div>
+
+        <div class="result">
+            <span>🎯 Accuracy</span>
+            <strong id="accuracy">0%</strong>
+        </div>
+
+        <div class="result">
+            <span>🎮 Attempts</span>
+            <strong id="totalAttempts">0</strong>
+        </div>
+
+        <div class="result">
+            <span>🏃 Buttons Caught</span>
+            <strong id="buttonsCaught">0</strong>
+        </div>
+
+        <div class="result">
+            <span>⏱ Time Wasted</span>
+            <strong id="timeWasted">00:00</strong>
+        </div>
+
+        <div class="uselessness">
+
+            <div>
+                ⭐ Uselessness
+                <strong>97%</strong>
+            </div>
+
+            <div class="progress">
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="rank-box">
+
+        <p>YOUR OFFICIAL RANK</p>
+
+        <h2 id="rank">
+            🥉 BEGINNER
+        </h2>
+
+        <p>
+            Your productivity has been carefully wasted.
+        </p>
+
+    </div>
+
+
+    <div class="result-buttons">
+
+        <button class="main-btn" onclick="showPage('challenges')">
+            🔄 WASTE MORE TIME
+        </button>
+
+        <button class="secondary-btn" onclick="showPage('home')">
+            🏠 HOME
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- CHATBOT -->
+
+<div id="chatbot">
+
+    <div class="chat-header">
+        🤖 UselessBot
+        <button onclick="toggleChat()">×</button>
+    </div>
+
+    <div id="chatMessages" class="chat-messages">
+
+        <div class="bot-message">
+            Hello. I am UselessBot.
+            How can I not help you?
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input
+            id="chatInput"
+            type="text"
+            placeholder="Ask something useless..."
+        >
+
+        <button onclick="sendMessage()">
+            →
+        </button>
+
+    </div>
+
+</div>
+
+<button id="chatOpen" onclick="toggleChat()">
+    🤖
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
