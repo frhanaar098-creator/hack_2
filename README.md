@@ -18,7 +18,7 @@
 Pointless Hub is a fun web app filled with useless challenges and mini-games. It is designed to waste time in the most entertaining way as possible.
 
 ### The Problem (that doesn't exist)
-[People are becoming too productive. There aren't enough websites dedicated to doing absolutely nothing!]
+People are becoming too productive. There aren't enough websites dedicated to doing absolutely nothing!
 
 ### The Solution (that nobody asked for)
 Pointless Hub provides silly challenges like finding the screen center, catching a moving button, guessing random numbers, and taking a nonsense IQ test — all for absolutely no reason.
@@ -48,27 +48,17 @@ Open index.html in a web browser or use VS Code Live Server.
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+ Screenshot 1 
+https://drive.google.com/file/d/1sFYMMY_KdWqvAPUgO8LQ0C5bMvLQ04W-/view?usp=drive_link
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+Screenshot 2
+https://drive.google.com/file/d/1klqBhF6u3r7znowz6YHeVWkBVIqeuruZ/view?usp=drive_link
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+Screenshot3
+https://drive.google.com/file/d/1mNzAWWH43WjiSRMjzA9VOY6Qb8PnOYa4/view?usp=drive_link
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 - Farhana Abdu Rahiman: UI design, HTML/CSS development, and challenge interface.
