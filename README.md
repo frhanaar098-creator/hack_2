@@ -2,7 +2,7 @@
 
 
 
-# [Project Name] 🎯
+# The pointless hub🎯
 
 
 ## Basic Details
